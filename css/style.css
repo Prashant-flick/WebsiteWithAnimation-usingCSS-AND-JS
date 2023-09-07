@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <---------------------frot Page---------------------------------> */
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 20000;
+}
+
+#main{
+    background-color: black;
+    width: 100%;
+}
+
+#frontPage{
+    position: relative;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 35px 40px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#heading{
+    margin-top: 90px;
+}
+
+#heading h1{
+    margin-left: 30px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 0.9;
+    opacity: .6;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#blocktest #secondh1{
+    margin-left: 230px;
+}
+
+#blocktest{
+    /* background-color: red; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#blocktest h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#heading2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+
+#heading2 h4{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1vw;
+    margin-top: .5vw;
+}
+
+#frontPageFooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frontPageFooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#frontPageFooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#frontPageFooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+    color: black;
+}
+
+/*--------------------------second page---------------------------- */
+.secpage{
+    width: 100%;
+    padding-top: 140px;
+    padding-right: 10vw; 
+    padding-left: 2vw; 
+    background-color: black;
+    height: 46vw;
+}
+
+.secpage .elem{
+    /* pointer-events: none; */
+    position: relative;
+    width: 100%;
+    padding-top: 3.3vw;
+    padding-bottom: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1.5px solid #888;
+    
+    color: white;
+}
+
+.secpage .lastelem{
+    border-bottom: 1.5px solid #888;
+}
+
+.elem h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 7.1vw;
+    opacity: 0.6;
+}
+
+.elem img{
+    opacity: 0;
+    /* display: none; */
+    pointer-events: none;
+    z-index: 500;
+    position: absolute;
+    height: 140%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------------last page---------------------- */
+
+.about-section{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 300px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding-bottom: 100px;
+    padding-left: 30vw;
+    padding-right: 20px;
+}
+
+.about-section img{
+    width: 200px;
+}
+
+.about-section .about{
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section .cy-img{
+    margin-right: 6vw;
+}
+
+.about p{
+    color: white;
+    line-height: 1.65;
+    padding-bottom: 20px;
+}
+
+.about #ab-me{
+    font-size: 12px;
+    color: white;
+    opacity: 0.6;
+}
+
+.about a{
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 85px;
+    height: 30px;
+    padding-left: 14px;
+    padding-top: 4px;
+    text-decoration: none;
+    
+}
+
+#youtube{
+    background-color: black;
+    padding-left: 2vw;
+    padding-bottom: 80px;
+}
+
+#youtube h5{
+    font-size: 12px;
+    opacity: 0.6;
+    color: white;
+}
+
+#youtube a{
+    font-family: "General Sans Medium";
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+#footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+#footer #left-footer{
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer #right-footer{
+    display: flex;
+    gap: 45px;
+}
+
+#footer h5{
+    font-size: 14px;
+    color: white;  
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: General Sans Medium;
+}
